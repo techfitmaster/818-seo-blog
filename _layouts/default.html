@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ page.title }} | {{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  {% seo %}
+  <style>
+    body { font-family: -apple-system, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; color: #333; }
+    a { color: #0066cc; }
+    .cta-box { background: #fff3cd; border: 1px solid #ffc107; padding: 15px; border-radius: 8px; margin: 20px 0; }
+    .cta-box a { font-weight: bold; color: #d4380d; }
+    header { border-bottom: 2px solid #eee; padding-bottom: 10px; margin-bottom: 20px; }
+    .post-list li { margin: 10px 0; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><a href="{{ site.baseurl }}/">🎮 {{ site.title }}</a></h1>
+    <p>{{ site.description }}</p>
+  </header>
+  <main>{{ content }}</main>
+  <footer style="margin-top:40px;border-top:1px solid #eee;padding-top:10px;font-size:12px;color:#999;">
+    © {{ site.title }} | 内容仅供参考
+  </footer>
+</body>
+</html>

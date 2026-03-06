@@ -1,0 +1,20 @@
+title: 818游戏攻略站
+description: 王者荣耀、DNF手游攻略，游戏账号购买指南
+url: "https://techfitmaster.github.io"
+baseurl: "/818-seo-blog"
+lang: zh-CN
+
+# SEO
+author: 818ys
+twitter_username: techfitmaster
+github_username: techfitmaster
+
+# Build
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+paginate: 10
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag

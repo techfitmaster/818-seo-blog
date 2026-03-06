@@ -1,0 +1,13 @@
+---
+layout: default
+title: 首页
+---
+<h2>最新攻略</h2>
+<ul class="post-list">
+  {% for post in site.posts limit:20 %}
+  <li>
+    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    <span style="color:#999;font-size:13px;"> — {{ post.date | date: "%Y/%m/%d" }}</span>
+  </li>
+  {% endfor %}
+</ul>
